@@ -8,8 +8,8 @@ module.exports = {
   setupFilePath: './commands/setup.json',
   commandsDir: './commands',  
   embedColor: "#1db954",
-  activityName: "con las bolas de manucho", 
-  activityType: "PLAYING",  // Available activity types : LISTENING , PLAYING
+  activityName: "manucho enfadado", 
+  activityType: "LISTENING",  // Available activity types : LISTENING , PLAYING
   SupportServer: "https://discord.gg/8532jdwC3m",
   embedTimeout: 5, 
   errorLog: "", 
