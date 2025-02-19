@@ -95,18 +95,18 @@ function initializePlayer(client) {
             const attachment = new AttachmentBuilder(cardPath, { name: 'musicard.png' });
             const embed = new EmbedBuilder()
             .setAuthor({ 
-                name: 'Playing Song..', 
+                name: 'Reproduciendo canción..', 
                 iconURL: musicIcons.playerIcon,
                 url: config.SupportServer
             })
-            .setFooter({ text: `Desarrollado por PanbimboGD | Amo a Manucho v1.1`, iconURL: musicIcons.heartIcon })
+            .setFooter({ text: `Desarrollado por PanbimboGD | Amo a Manucho v1.2`, iconURL: musicIcons.heartIcon })
             .setTimestamp()
             .setDescription(  
-                `- **Title:** [${track.info.title}](${track.info.uri})\n` +
-                `- **Author:** ${track.info.author || 'Unknown Artist'}\n` +
-                `- **Length:** ${formatDuration(track.info.length)}\n` +
-                `- **Requester:** ${requester}\n` +
-                `- **Source:** ${track.info.sourceName}\n` + '**- Controles :**\n 🔁 `Loop`, ❌ `Deshabilitar`, ⏭️ `Skip`, 📜 `Cola`, 🗑️ `Vaciar`\n ⏹️ `Parar`, ⏸️ `Pausa`, ▶️ `Reanudar`, 🔊 `Vol +`, 🔉 `Vol -`')
+                `- **Título:** [${track.info.title}](${track.info.uri})\n` +
+                `- **Autor:** ${track.info.author || 'Artista Desconocido'}\n` +
+                `- **Duración:** ${formatDuration(track.info.length)}\n` +
+                `- **DJ:** ${requester}\n` +
+                `- **Procedencia:** ${track.info.sourceName}\n` + '**- Controles :**\n 🔁 `Loop`, ❌ `Deshabilitar`, ⏭️ `Skip`, 📜 `Cola`, 🗑️ `Vaciar`\n ⏹️ `Parar`, ⏸️ `Pausa`, ▶️ `Reanudar`, 🔊 `Vol +`, 🔉 `Vol -`')
             .setImage('attachment://musicard.png')
             .setColor('#FF7A00');
 

@@ -1,5 +1,5 @@
 module.exports = {
-    footer: "Desarrollado por PanbimboGD | Amo a Manucho v1.1",
+    footer: "Desarrollado por PanbimboGD | Amo a Manucho v1.2",
     ping: {
       description: "Comprobar la latencia del bot",
       response: "Comprobando...",
@@ -8,7 +8,7 @@ module.exports = {
         responseTime: "- Tiempo de Respuesta del Bot: **{latency}ms**",
         websocketPing: "- Ping del WebSocket: **{ping}ms**",
         uptime: "- Tiempo de Actividad: **{uptime}**",
-        footer: "Desarrollado por PanbimboGD | Amo a Manucho v1.1"
+        footer: "Desarrollado por PanbimboGD | Amo a Manucho v1.2"
       }
     },
     addsong: {
