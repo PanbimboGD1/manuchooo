@@ -62,7 +62,7 @@ function initializePlayer(client) {
     let collector = null;
 
     client.riffy.on("nodeConnect", node => {
-        console.log(`${colors.cyan}[ LAVALINK ]${colors.reset} ${colors.green}Node ${node.name} Connected ✅${colors.reset}`);
+        console.log(`${colors.cyan}[ LAVALINK ]${colors.reset} ${colors.green}Node ${node.name} Conectado ✅${colors.reset}`);
     });
     
     client.riffy.on("nodeError", (node, error) => {
@@ -83,7 +83,7 @@ function initializePlayer(client) {
                 progressBarColor: '#5F2D00',
                 name: track.info.title,
                 nameColor: '#FF7A00',
-                author: track.info.author || 'Unknown Artist',
+                author: track.info.author || 'Artista Desconocido',
                 authorColor: '#696969',
             });
 
@@ -99,14 +99,14 @@ function initializePlayer(client) {
                 iconURL: musicIcons.playerIcon,
                 url: config.SupportServer
             })
-            .setFooter({ text: `Developed by SSRR | Prime Music v1.2`, iconURL: musicIcons.heartIcon })
+            .setFooter({ text: `Desarrollado por PanbimboGD | Amo a Manucho v1.1`, iconURL: musicIcons.heartIcon })
             .setTimestamp()
             .setDescription(  
                 `- **Title:** [${track.info.title}](${track.info.uri})\n` +
                 `- **Author:** ${track.info.author || 'Unknown Artist'}\n` +
                 `- **Length:** ${formatDuration(track.info.length)}\n` +
                 `- **Requester:** ${requester}\n` +
-                `- **Source:** ${track.info.sourceName}\n` + '**- Controls :**\n 🔁 `Loop`, ❌ `Disable`, ⏭️ `Skip`, 📜 `Queue`, 🗑️ `Clear`\n ⏹️ `Stop`, ⏸️ `Pause`, ▶️ `Resume`, 🔊 `Vol +`, 🔉 `Vol -`')
+                `- **Source:** ${track.info.sourceName}\n` + '**- Controles :**\n 🔁 `Loop`, ❌ `Deshabilitar`, ⏭️ `Skip`, 📜 `Cola`, 🗑️ `Vaciar`\n ⏹️ `Parar`, ⏸️ `Pausa`, ▶️ `Reanudar`, 🔊 `Vol +`, 🔉 `Vol -`')
             .setImage('attachment://musicard.png')
             .setColor('#FF7A00');
 
